@@ -10,3 +10,17 @@ const desplegar = datos => {
         }
     });
 }
+
+
+const getDatos = async () => {
+    const url = 'https://jsonplaceholder.typicode.com/photos';
+    try {
+        const response = await fetch(url);
+        const datos = await response.json();
+
+        desplegar(datos)
+    } catch (err) {
+        console.log(err);
+    }
+}
+
