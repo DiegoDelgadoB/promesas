@@ -24,3 +24,12 @@ const getDatos = async () => {
     }
 }
 
+
+
+const funcion01 = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('*** Información Enviada ***')
+        }, 2000)
+    })
+}
