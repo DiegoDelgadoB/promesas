@@ -33,3 +33,11 @@ const funcion01 = () => {
         }, 2000)
     })
 }
+const funcion02 = async () => {
+    getDatos()
+    const resp = await funcion01();
+    console.log(resp)
+    document.getElementById('resultado').innerHTML = resp
+
+}
+funcion02();
